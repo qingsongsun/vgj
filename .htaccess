@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule payment/weipay/notify index.php?route=payment/weipay/notify[L]
+RewriteRule payment/weipay/repay index.php?route=payment/weipay/payment[L]
+RewriteRule payment/weipay/checkout index.php?route=payment/weipay/checkout[L]
+RewriteRule account/wxlogin index.php?route=account/wxlogin[L]
+RewriteRule account/mycoupon index.php?route=account/mycoupon[L]
+RewriteRule account/wxbind index.php?route=account/wxbind[L]
+RewriteRule account/openid index.php?route=account/openid[L]
+RewriteRule admin/common/applogin admin/index.php?route=common/applogin[L]
+RewriteRule account/login index.php?route=account/login[L]
+
